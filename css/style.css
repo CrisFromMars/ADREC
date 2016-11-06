@@ -170,3 +170,14 @@ hr{
 	filter:         drop-shadow(5px 5px 5px #222);
 
 }
+
+/******* Metodos *****/
+
+#contenido{
+	float: left;
+	padding-left: 250px;
+	padding-bottom: 50px;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: rgb(229,229,229);
+}
