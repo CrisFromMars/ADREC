@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/icono.png" />
+    <link href='https://fonts.googleapis.com/css?family=Peddana' rel='stylesheet' type='text/css'>
+    <title>ADREC</title>
+</head>
+
+<body>
+    <div id="encabezado">
+        <header>
+            <a href="index.html"><h1 class="brilloh1">ADREC</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="creadores.html">Creadores</a></li>
+                    <li><a class="active" href="index.html">Métodos</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <br><br>
+    <main>
+      <p id="pAdmin">Distribución Binomial Negativa</p>
+      <a href="DistribucionB.html"><button id="ventanaGenero">D.Binominal</button></a>
+      <a href="DistribucionM.html"><button id="ventanaConsoles">D.Multinomial</button></a>
+      <a href="DistribucionBN.html"><button class="active" id="ventanaVideogames">D.Binomial Negativa</button></a>
+      <a href="DistribucionP.html"><button id="ventanaSales">D.Poisson</button><br><br></a>
+      <br>
+      <input id="n" type="number" placeholder="Valor de n"></br>
+      </br>
+      <input id="k" type="number" placeholder="Valor de k"></br>
+      </br>
+      <input id="p" type="number" placeholder="Valor de p"></br>
+      </br>
+      <input id="q" type="number" placeholder="Valor de q"></br>
+      </br>
+      <button id="calculaBN">Calcular</button>
+      <button id="ayuda">Ayuda de Usuario</button>
+      <a href="http://alasmoretti.blogspot.mx/2012/04/distribucion-binomial-negativa.html" target="_blank"><button>Mas informacion</button></a>
+      <p id="resultados">
+
+      </p>
+    </main><br><br><br>
+    <section id="contenido">
+
+    </section>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/codeBN.js"></script>
+</body>
+
+</html>
