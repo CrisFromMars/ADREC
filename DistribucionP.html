@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="img/icono.png" />
-    <link href='https://fonts.googleapis.com/css?family=Peddana' rel='stylesheet' type='text/css'>
-    <title>ADREC</title>
-</head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon-16.png" />
 
-<body>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+    <title>Metodos</title>
+  </head>
+  <body>
     <div id="encabezado">
         <header>
-            <a href="index.html"><h1 class="brilloh1">ADREC</h1></a>
+            <a href="index.html"> <img align="left" id='nombreLogo' src="img/nombre.png"></a>
             <nav>
                 <ul>
                     <li><a href="creadores.html">Creadores</a></li>
@@ -22,7 +21,8 @@
         </header>
     </div>
     <br><br>
-    <main>
+      <section float="left" id="MainCreadores">
+          <main>
       <p id="pAdmin">Distribución de Poisson</p>
       <a href="DistribucionB.html"><button id="ventanaGenero">D.Binominal</button></a>
       <a href="DistribucionM.html"><button id="ventanaConsoles">D.Multinomial</button></a>
@@ -38,14 +38,15 @@
       <button id="calculaB">Calcular</button>
       <button id="ayuda">Ayuda de Usuario</button>
       <a href="http://www.itchihuahua.edu.mx/academic/industrial/sabaticorita/_private/05Distr%20Poisson.htm" target="_blank"><button>Mas informacion</button></a>
+      </section>
       <p id="resultados">
 
       </p>
 
-    </main><br><br><br>
-    <section id="contenido">
+    <section align="center" id="contenido">
 
     </section>
+  </main>
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/codeP.js"></script>
 </body>
