@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" type="image/png" href="img/favicon-16.png" />
-
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/codeBN.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
     <title>Metodos</title>
   </head>
@@ -24,32 +25,50 @@
       <section float="left" id="MainCreadores">
           <main>
       <p id="pAdmin">Distribución Binomial Negativa</p>
-      <a href="DistribucionB.html"><button id="ventanaGenero">D.Binominal</button></a>
-      <a href="DistribucionM.html"><button id="ventanaConsoles">D.Multinomial</button></a>
-      <a href="DistribucionBN.html"><button class="active" id="ventanaVideogames">D.Binomial Negativa</button></a>
-      <a href="DistribucionP.html"><button id="ventanaSales">D.Poisson</button><br><br></a>
+      <a href="DistribucionB.html"><button >D.Binominal</button></a>
+      <a href="DistribucionM.html"><button >D.Multinomial</button></a>
+      <a href="DistribucionBN.html"><button class="active" >D.Binomial Negativa</button></a>
+      <a href="DistribucionP.html"><button >D.Poisson</button><br><br></a>
+
       <br>
-      <input id="n" type="number" placeholder="Valor de n"></br>
-      </br>
-      <input id="k" type="number" placeholder="Valor de k"></br>
-      </br>
-      <input id="p" type="number" placeholder="Valor de p"></br>
-      </br>
-      <input id="q" type="number" placeholder="Valor de q"></br>
-      </br>
-      <button id="calculaBN">Calcular</button>
-      <button id="ayuda">Ayuda de Usuario</button>
-      <a href="http://alasmoretti.blogspot.mx/2012/04/distribucion-binomial-negativa.html" target="_blank"><button>Mas informacion</button></a>
-    </section>
-      <p id="resultados">
+      <tr>
+        <td>
+          <input type="text" id="n" placeholder="Valor de n"> <button id="infoN" class="btnSmall">?</button>
+        </td>
+        <td>
+           <label class="pPeque" id="textN"></label>
+        </td>
+      </tr>
+      <br>
+      <tr>
+        <td>
+          <input type="text" id="k" placeholder="Valor de k"> <button id="infoK" class="btnSmall">?</button>
+        </td>
+        <td>
+           <label class="pPeque" id="textK"></label>
+        </td>
+      </tr>
+      <br>
+      <tr>
+        <td>
+          <input type="text" id="p" placeholder="Valor de p"> <button id="infoP" class="btnSmall">?</button>
+        </td>
+        <td>
+           <label class="pPeque" id="textP"></label>
+        </td>
+      </tr>
+      <br><br><br>
 
-      </p>
-    <section align="center" id="contenido">
+      <button id="calcularBN">Calcular</button>
 
-    </section>
+      <tr>
+        <td>
+          <input type="text" id="result1" class="result" placeholder="Resultado">
+        </td>
+      </tr>
+
+      </section>
   </main>
-    <script src="js/jquery-1.12.3.min.js"></script>
-    <script src="js/codeBN.js"></script>
 </body>
 
 </html>
