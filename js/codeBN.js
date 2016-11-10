@@ -7,6 +7,11 @@ $(document).ready(function() {
         var k=parseInt($('#k').val());
         var p=parseFloat($('#p').val());
 
+        if((document.getElementById("n").value.length)==0){alert("'n' no debe estar en blanco");return;}
+        if((document.getElementById("k").value.length)==0){alert("'k' no debe estar en blanco");return;}
+        if((document.getElementById("p").value.length)==0){alert("'p' no debe estar en blanco");return;}
+        if(n<=0){alert("'n' debe ser un número mayor a 0");return;}
+        if(k<0){alert("'k' debe un numero mayor a 0 ");return;}
         if(p>1)
         {
           alert("'p' debe ser un número entre 0 y 1");
@@ -51,6 +56,9 @@ $(document).ready(function() {
           var g=n-k;
           var h=Math.pow(f,g);
           var res=d*e*h;
+
+          if(isNaN(res)){alert("Por favor no ingreses caracteres especiales o letras en los campos.");return;}
+
           $('#result1').val(Math.round((res)*100000)/100000);
         }
 

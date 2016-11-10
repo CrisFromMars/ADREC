@@ -4,9 +4,14 @@ $(document).ready(function() {
                 console.log(n);
               	var n=parseInt(document.getElementById("n").value);
               	var r=parseInt(document.getElementById("r").value);
-              	var p=document.getElementById("p").value;
+              	var p=parseFloat(document.getElementById("p").value);
               	if(p<0||p>1){alert("'p' debe ser un número entre 0 y 1");return;}
               	if(r>n){alert("'x' debe ser menor o igual a 'n' ");return;}
+                if((document.getElementById("n").value.length)==0){alert("'n' no debe estar en blanco");return;}
+                if((document.getElementById("r").value.length)==0){alert("'x' no debe estar en blanco");return;}
+                if((document.getElementById("p").value.length)==0){alert("'p' no debe estar en blanco");return;}
+                if(n<=0){alert("'n' debe ser un número mayor a 0");return;}
+                if(r<0){alert("'x' debe un numero mayor a 0 ");return;}
               	var nf=1;
               	var rf=1;
               	var nrf=1;
@@ -23,6 +28,8 @@ $(document).ready(function() {
               	var npr=nf/nrf;
               	var ncr=npr/rf;
               	var des=ncr*Math.pow(p,r)*Math.pow((1-p),(n-r));
+
+                if(isNaN(des)){alert("Por favor no ingreses caracteres especiales o letras en los campos.");return;}
 
               	document.getElementById("result1").value=Math.round(des*10000)/10000;
               });
