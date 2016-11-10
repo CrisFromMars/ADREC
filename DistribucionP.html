@@ -28,21 +28,46 @@
       <a href="DistribucionM.html"><button id="ventanaConsoles">D.Multinomial</button></a>
       <a href="DistribucionBN.html"><button id="ventanaVideogames">D.Binomial Negativa</button></a>
       <a href="DistribucionP.html"><button class="active" id="ventanaSales">D.Poisson</button><br><br></a>
+
       <br>
-      <input id="x" type="number" placeholder="Valor de x"></br>
-      </br>
-      <input id="lambda" type="number" placeholder="Valor de lambda"></br>
-      </br>
-      <input id="t" type="number" placeholder="Valor del tiempo"></br>
-      </br>
-      <button id="calculaB">Calcular</button>
-      <button id="ayuda">Ayuda de Usuario</button>
+      <tr>
+        <td>
+          <input type="text" id="x" placeholder="Valor de x"> <button id="infoX" class="btnSmall">?</button>
+        </td>
+        <td>
+           <label class="pPeque" id="textX"></label>
+        </td>
+      </tr>
+      <br>
+      <tr>
+        <td>
+          <input type="text" id="lambda" placeholder="Valor de lambda"> <button id="infoL" class="btnSmall">?</button>
+        </td>
+        <td>
+           <label class="pPeque" id="textL"></label>
+        </td>
+      </tr>
+      <br>
+      <tr>
+        <td>
+          <input type="text" id="t" placeholder="Valor de t"> <button id="infoT" class="btnSmall">?</button>
+        </td>
+        <td>
+           <label class="pPeque" id="textT"></label>
+        </td>
+      </tr>
+      <br><br><br>
+
+      <button id="calcularP">Calcular</button>
+
+      <tr>
+        <td>
+          <input type="text" id="result1" class="result" placeholder="Resultado">
+        </td>
+      </tr>
       <a href="http://www.itchihuahua.edu.mx/academic/industrial/sabaticorita/_private/05Distr%20Poisson.htm" target="_blank"><button>Mas informacion</button></a>
+
       </section>
-      <p id="resultados">
-
-      </p>
-
     <section align="center" id="contenido">
 
     </section>
