@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+    $("#n,#k,#p").keyup(function(event){
+      if(event.keyCode == 13){
+        $("#calcularBN").click();
+      }
+    });
+
     $('#calcularBN').click(function(){
 
         console.log("Hola :v");

@@ -1,6 +1,12 @@
 // Boton Lista/Mostrar *****************
 $(document).ready(function() {
 
+    $("#n,#x1,#x2,#x3,#p1,#p2,#p3").keyup(function(event){
+      if(event.keyCode == 13){
+        $("#calculaM").click();
+      }
+    });
+
     $('#calculaM').click(function(){
             console.log(n);
             //declaraciones

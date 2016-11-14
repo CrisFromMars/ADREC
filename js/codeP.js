@@ -1,6 +1,12 @@
 // Boton Lista/Mostrar *****************
 $(document).ready(function() {
 
+    $("#x,#lambda,#t").keyup(function(event){
+  if(event.keyCode == 13){
+      $("#calcularP").click();
+  }
+  });
+
   $('#calcularP').click(function(){
               var x=parseInt(document.getElementById("x").value);
               var lambda=parseInt(document.getElementById("lambda").value);

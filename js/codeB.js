@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+  $("#n,#r,#p").keyup(function(event){
+  if(event.keyCode == 13){
+      $("#calcularB").click();
+  }
+  });
+
     $('#calcularB').click(function(){
                 console.log(n);
               	var n=parseInt(document.getElementById("n").value);
